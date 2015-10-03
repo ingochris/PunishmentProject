@@ -1,5 +1,5 @@
 #!/bin/bash 
-
+#run with "bash -insert file name-
 npm install express --save
 npm install body-parser --save 
 npm install mongoose --save
