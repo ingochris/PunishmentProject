@@ -1,0 +1,25 @@
+{
+  "name": "PunishmentProject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://ingochris@github.com/ingochris/PunishmentProject.git"
+  },
+  "author": "ingochris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ingochris/PunishmentProject/issues"
+  },
+  "homepage": "https://github.com/ingochris/PunishmentProject",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.1.9",
+    "parser": "^0.1.4"
+  }
+}
