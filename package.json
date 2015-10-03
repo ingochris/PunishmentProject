@@ -1,0 +1,24 @@
+{
+  "name": "PunishmentProject",
+  "version": "1.0.0",
+  "description": "SDHacks 2015",
+  "main": "index.js",
+  "scripts": {
+    "test": "Hello world "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ingochris/PunishmentProject"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ingochris/PunishmentProject/issues"
+  },
+  "homepage": "https://github.com/ingochris/PunishmentProject",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.1.9"
+  }
+}
