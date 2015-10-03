@@ -1,0 +1,26 @@
+{
+	_id: ObjecId(666666666666)
+	title: 'TaskDB'
+	description: 'Punish me'
+	by: 'ingochris'
+	url: 'punish.me'
+	tags: ['mongodb', 'database', 'noSQL']
+	tasks: [
+	{
+		user: 'user1'
+		task: '$task'
+		timeCreated: new time(2015,10,2,2300),
+		timeDue: due time(2015,10,4,1100)
+		worth: '5'
+		status: '0'
+	},
+	{
+		user: 'user2'
+		task: '$task'
+		timeCreated: new time(2015,10,2,2300),
+		timeDue: due time(2015,10,4,1100)
+		worth: '5'
+		status: '0'
+	},
+	]
+}
