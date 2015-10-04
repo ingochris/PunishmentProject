@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--uses angular-->
     <html ng-app="todoApp">
       <head>
@@ -22,12 +22,35 @@
       <body>
         <center>
         <div id="box"> 
-        <h2>CHARITY OR ME</h2>
+          <h2><u>CHARITY OR ME</h2></u>
 
         <div class = "main-container">
+           <div class ="charity-box"> 
+            <div class ="charity-box2">
+          I am willing to donate to: 
+          <div class = "charities">
+
+        
+            
+             
+                <div class="dropdown">
+                    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Charity: 
+                      <span class="caret"></span>
+                    </button>
+                    <center> 
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+<!--                           <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li><a href="#">Separated link</a></li> -->
+                    </ul>
+                  </div>
+                </div>
+          </div>
         <!--behavior controller-->
         <div ng-controller="TodoListController as todoList">
-          <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span> <p>You have <div><span id="time">70:00</span> minutes!</div></p>
+          <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span> <p>You have <div><span id="time"> <b> <font size="4">70:00</font></b></span> minutes!</div></p>
           <!--controller calls archive() method-->
           [ <a href="" ng-click="todoList.archive()">archive</a> ]
           <ul class="unstyled">
@@ -39,12 +62,20 @@
               <span class="done-{{todo.done}}">{{todo.text}}</span>
             </li>
           </ul>
+                    I want to invest 
+          <form> 
+            <input type="text" name="fname" placeholder = "Add worth here ">
+          </form>
+          <p>
+            <br>in
+            <br>
           <form ng-submit="todoList.addTodo()">
             <input type="text" ng-model="todoList.todoText"  size="30"
-                   placeholder="add new task here">
+                   placeholder="Add task here">
             <input class="btn-primary" type="submit" value="add">
           </form>
           </div>
+
         </div>
         </center>
       </body>
