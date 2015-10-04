@@ -27,3 +27,21 @@ angular.module('todoApp', [])
         };
       });
 
+mongoose.module('Tasks')
+  var mongoose = require('mongoose');
+  var Schema = mongoose.Schema;
+
+  var taskSchema = new Schema({
+    user: String, 
+    task: String,
+    dateCreated: {type: Date, default: Date.now },
+    dateDue: { type: Number, min: dateCreated, max: },
+    worth: Number,
+    status: Boolean,
+  })
+  
+  // creating a model - ready to go 
+  var Tasks = mongoose.model('Tasks', taskSchema);
+
+
+

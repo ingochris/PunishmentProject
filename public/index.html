@@ -1,24 +1,32 @@
 <!doctype html>
+<!--uses angular-->
     <html ng-app="todoApp">
       <head>
+      <!--load ng (angular)-->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+        <!--todo.js controller-->
         <script src="todo.js"></script>
         <link rel="stylesheet" href="todo.css">
       </head>
       <body>
         <h2>Todo</h2>
+        <!--behavior controller-->
         <div ng-controller="TodoListController as todoList">
           <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span>
+          <!--controller calls archive() method-->
           [ <a href="" ng-click="todoList.archive()">archive</a> ]
           <ul class="unstyled">
+          <!-- ng-repeat to unroll collection: generate new <li> element per object in todolist.todos, and the <li> is removed when objects are removed from todolist.todos.-->
             <li ng-repeat="todo in todoList.todos">
+            <!-- link form and model (todo.done and checkbox)-->
               <input type="checkbox" ng-model="todo.done">
+              <!-- css strikes through-->
               <span class="done-{{todo.done}}">{{todo.text}}</span>
             </li>
           </ul>
           <form ng-submit="todoList.addTodo()">
             <input type="text" ng-model="todoList.todoText"  size="30"
-                   placeholder="add new todo here">
+                   placeholder="add new task here">
             <input class="btn-primary" type="submit" value="add">
           </form>
         </div>
