@@ -1,5 +1,45 @@
+body {
+  padding: 0;
+  background-image: url("http://41.media.tumblr.com/e1273a9cf3e25a5f93584f12cffdc852/tumblr_nhpbyqDPV81ta0hnbo1_1280.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: 100%;
+  max-width: 100%; 
+  color: black;
+  /*font-family: 'Slabo 27px', serif;*/
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  
+
+}
+
+a {
+	
+}
+.main-container{
+	font-size: 15px;
+  text-align: center;
+  color: black;
+  position: relative;
+
+ 
+}
+
+input#texthere {
+	    position: relative;
+    width: 153px;
+    height: 40px;
+    border-style: solid;
+    border-width: 0px 0px 3px 0px;
+    border-color: #FFFF;
+    opacity: .5;
+    color: black;
+}
+#texthere{
+	color: black;
+}
 .done-true {
       text-decoration: line-through;
-      color: grey;
+      color: white;
     }
 

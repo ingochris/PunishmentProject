@@ -6,9 +6,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
         <!--todo.js controller-->
         <script src="todo.js"></script>
-        <script type="timer.js"></script>
         <link rel="stylesheet" href="todo.css">
-
+      
 <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
@@ -20,33 +19,28 @@
 
       </head>
       <body>
-        <center>
-        <div id="box"> 
         <h2>Todo</h2>
-
-        <div class = "main-container">
         <!--behavior controller-->
         <div ng-controller="TodoListController as todoList">
-          <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span> <p>You have <div><span id="time">70:00</span> minutes!</div></p>
+          <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span>
           <!--controller calls archive() method-->
           [ <a href="" ng-click="todoList.archive()">archive</a> ]
           <ul class="unstyled">
           <!-- ng-repeat to unroll collection: generate new <li> element per object in todolist.todos, and the <li> is removed when objects are removed from todolist.todos.-->
             <li ng-repeat="todo in todoList.todos">
-            <!-- link form and model (todo.done and checkbox)-->
+            <!-- link form and model (todo .done and checkbox)-->
               <input type="checkbox" ng-model="todo.done">
               <!-- css strikes through-->
               <span class="done-{{todo.done}}">{{todo.text}}</span>
             </li>
           </ul>
+          <!-- todotext to todos collection-->
           <form ng-submit="todoList.addTodo()">
             <input type="text" ng-model="todoList.todoText"  size="30"
                    placeholder="add new task here">
             <input class="btn-primary" type="submit" value="add">
           </form>
-          </div>
         </div>
-        </center>
       </body>
     </html>
 
