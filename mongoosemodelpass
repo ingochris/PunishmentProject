@@ -1,0 +1,2 @@
+var Tasks = mongoose.model('Tasks', taskSchema);
+// creating a model - ready to go 
