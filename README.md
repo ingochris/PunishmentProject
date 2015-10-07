@@ -1,5 +1,6 @@
 #CHARITY OR ME
 
+http://charityor.me [Status: Offline]
 A #Campathon Project to Monetize Procrastination
 
 The project is a todo-list web-based application for the purpose of inspiring humans to achieve our long and short term goals, from shipping a project to putting on socks.

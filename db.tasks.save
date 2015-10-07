@@ -1,0 +1,1 @@
+db.tasks.save( { user: 'user1', task: 'hack', timeCreated: new time(2015,10,2,)})
